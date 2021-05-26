@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import { Col, Row } from "react-bootstrap";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Row>
+        <Col>
+          <p>List:</p>
+          {/* <input className="form-control" value={textfield} onChange={e => setTextfield(e.target.value)}></input>
+         <Button onChange={() => handleAddTodo()}>add</Button>  */}
+        </Col>
+      </Row>
     </div>
   );
 }
