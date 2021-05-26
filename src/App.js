@@ -21,11 +21,7 @@ function App() {
           <Route exact path="/">
             <Startseite/>
             <Row>
-        <Col>
-          <p>List:</p>
-{/*           <input className="form-control" value={item} onChange={e => text(e.target.value)}></input>
-         <Button onChange={() => handler()}>add</Button>  */}
-        </Col>
+       
       </Row>
 
           </Route>
