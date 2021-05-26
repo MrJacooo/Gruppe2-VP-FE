@@ -1,19 +1,39 @@
-import './App.css';
-import { Col, Row } from "react-bootstrap";
-
+import {
+  HashRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
 function App() {
   return (
-    <div>
-      <Row>
+    <Router>
+      <Container>
+
+
+        <Switch>
+          <Route exact path="/">
+            <Startseite/>
+            <Row>
         <Col>
           <p>List:</p>
-          {/* <input className="form-control" value={textfield} onChange={e => setTextfield(e.target.value)}></input>
-         <Button onChange={() => handleAddTodo()}>add</Button>  */}
+{/*           <input className="form-control" value={item} onChange={e => text(e.target.value)}></input>
+         <Button onChange={() => handler()}>add</Button>  */}
         </Col>
       </Row>
-    </div>
+
+          </Route>
+        </Switch>
+      </Container>
+    </Router>
   );
 }
 
 export default App;
+
+function Startseite()  {
+  return(
+      <p>Startseite</p>
+  );
+}
