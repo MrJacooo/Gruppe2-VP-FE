@@ -7,12 +7,13 @@ import {
   Link
 } from "react-router-dom";
 import { Container, Nav, Row, Col, Card, CardDeck, Carousel, Form, Button, Image, Alert, Modal } from 'react-bootstrap';
+import {List} from "./list.js"
 
 function App() {
   return (
     <Router>
       <Container>
-
+        <h1>Einkaufsliste</h1>
 
         <Switch>
           <Route exact path="/">
@@ -26,8 +27,11 @@ function App() {
 
 export default App;
 
-function Startseite()  {
+function Startseite(props)  {
+
   return(
-      <p>Startseite</p>
+      <div>
+        <List/>
+      </div>
   );
 }
