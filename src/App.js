@@ -4,25 +4,20 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import { Container, Row, Col, Button } from 'react-bootstrap';
+
+import { Container, Nav, Row, Col, Card, CardDeck, Carousel, Form, Button, Image, Alert, Modal } from 'react-bootstrap';
+import {List} from "./list.js"
+
 
 function App() {
   return (
     <Router>
       <Container>
-
+        <h1>Einkaufsliste</h1>
 
         <Switch>
           <Route exact path="/">
             <Startseite/>
-            <Row>
-        <Col>
-          <p>List:</p>
-{/*           <input className="form-control" value={item} onChange={e => text(e.target.value)}></input>
-         <Button onChange={() => handler()}>add</Button>  */}
-        </Col>
-      </Row>
-
           </Route>
         </Switch>
       </Container>
@@ -32,8 +27,11 @@ function App() {
 
 export default App;
 
-function Startseite()  {
+function Startseite(props)  {
+
   return(
-      <p>Startseite</p>
+      <div>
+        <List/>
+      </div>
   );
 }
