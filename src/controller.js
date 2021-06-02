@@ -2,7 +2,7 @@ import React from "react";
 
 export function getItems(fn) {
     fetch("http://localhost:8080/items")
-        .then(r => r.json)
+        .then(r => r.json())
         .then(data => { fn(data) })
 }
 
@@ -17,11 +17,11 @@ export function postItem(fn, item) {
         mode: 'cors',
         body: JSON.stringify(item)
     })
-        .then(r = r.json).then(data => fn(data))
+        .then(r => r.json()).then(data => fn(data))
 }
 
 
 export function deleteItem(fn, id) {
     fetch("http://localhost:8080/items/" + id, { method: 'delete' })
-        .then(r => r.json).then(data => fn(data))
+        .then(r => r.json()).then(data => fn(data))
 }
