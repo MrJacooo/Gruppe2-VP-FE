@@ -12,7 +12,7 @@ export default function Item({ props }) {
                     <p>
                         {props.description}
                     </p>
-                    <Button variant="danger" onClick={() => deleteItem(null, props.id)}>Delete</Button>
+                    <Button className="float-right" variant="danger" onClick={() => deleteItem(null, props.id)}>Delete</Button>
                 </Card.Text>
             </Card.Body>
 

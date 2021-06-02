@@ -27,11 +27,6 @@ function App() {
 
           </Route>
         </Switch>
-        <div>
-          <h1>Item Testing</h1>
-          <Button onClick={() => getItems(data => console.log(data))}>Get Items</Button>
-          <Item props={{ id: 2, name: "Biscuit", description: "ein keks der mit einem herrvoragenden Geschmack und absoluter Leistung überzeugt, vieln dank Obama", amount: 10, amountType: "pieces", alreadyBought: false, addedDate: null }} />
-        </div>
       </Container>
     </Router>
   );
