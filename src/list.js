@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {getItems} from "./controller.js";
-import {Items} from "./items";
+import Item from "./item.js";
 import { Col} from 'react-bootstrap';
 
 
-export function List(){
+export default function List(){
 
     const [list, setList] = useState([]);
     const [list2, setList2] = useState([1,2,3])
@@ -19,7 +19,7 @@ export function List(){
             {list.map((e) =>
                 <Col>
                 <li>
-                    <Items product={e}></Items>
+                    <Item product={e}></Item>
                 </li>
                 </Col>
             )}
