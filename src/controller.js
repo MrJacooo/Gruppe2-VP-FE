@@ -5,7 +5,7 @@ export function getItems(fn) {
         .then(r => r.json())
         .then(data => { fn(data) })
 }
-
+/*
 export function postItem(fn, item) {
     fetch("http://localhost:8080/items", {
         method: 'POST',
@@ -19,7 +19,7 @@ export function postItem(fn, item) {
     })
         .then(r = r.json).then(data => fn(data))
 }
-
+*/
 
 export function deleteItem(fn, id) {
     fetch("http://localhost:8080/items/" + id, { method: 'delete' })

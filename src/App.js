@@ -5,9 +5,8 @@ import {
   Link
 } from "react-router-dom";
 
-import { Container, Nav, Row, Col, Card, CardDeck, Carousel, Form, Button, Image, Alert, Modal } from 'react-bootstrap';
 import {List} from "./list.js"
-
+import {getItems} from "./controller";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 
@@ -17,8 +16,11 @@ function App() {
       <Container>
         <h1>Einkaufsliste</h1>
 
+
+
         <Switch>
           <Route exact path="/">
+
             <Startseite/>
             <Row>
        
@@ -37,6 +39,7 @@ function Startseite(props)  {
 
   return(
       <div>
+          <h2>Startseite</h2>
         <List/>
       </div>
   );
