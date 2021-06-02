@@ -14,14 +14,14 @@ function App() {
 
         <Switch>
           <Route exact path="/">
-            <Startseite/>
+            <Startseite />
             <Row>
-        <Col>
-          <p>List:</p>
-{/*           <input className="form-control" value={item} onChange={e => text(e.target.value)}></input>
+              <Col>
+                <p>List:</p>
+                {/*           <input className="form-control" value={item} onChange={e => text(e.target.value)}></input>
          <Button onChange={() => handler()}>add</Button>  */}
-        </Col>
-      </Row>
+              </Col>
+            </Row>
 
           </Route>
         </Switch>
@@ -32,8 +32,8 @@ function App() {
 
 export default App;
 
-function Startseite()  {
-  return(
-      <p>Startseite</p>
+function Startseite() {
+  return (
+    <p>Startseite</p>
   );
 }
