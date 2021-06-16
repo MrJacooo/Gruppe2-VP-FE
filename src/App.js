@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import List from "./list.js"
-import {getItems} from "./controller";
+import { getItems } from "./controller";
 import { Container, Row, Col, Button } from 'react-bootstrap';
 
 //import Item from "./item"
@@ -41,11 +41,11 @@ export default App;
 
 function Startseite(props) {
 
-  return(
-      <div>
-          <h2>Startseite</h2>
-          <p>List:</p>
-        <List/>
-      </div>
+  return (
+    <div>
+      <h2>Startseite</h2>
+      <p>List:</p>
+      <List />
+    </div>
   );
 }

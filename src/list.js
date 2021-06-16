@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import { getItems } from "./controller.js";
 import Item from "./item.js";
-import { Col } from 'react-bootstrap';
+import { Col, Modal } from 'react-bootstrap';
 
 
 export default function List() {
@@ -28,6 +28,13 @@ export default function List() {
                     </li>
                 </Col>
             )}
+
+            <Modal show={true}>
+                <Modal.Body>
+                    test
+                </Modal.Body>
+            </Modal>
+
         </ul>
     );
 
