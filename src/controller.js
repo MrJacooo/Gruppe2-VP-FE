@@ -26,3 +26,15 @@ export function deleteItem(fn, id) {
         .then(r => r.json())
         .then(data => fn(data))
 }
+
+export function getPeople(fn) {
+    fetch("http://localhost:8080/person")
+        .then(r => r.json())
+        .then(data => { fn(data) })
+}
+
+export function deletePerson(fn, id) {
+    fetch("http://localhost:8080/person/" + id, { method: 'delete' })
+        .then(r => r.json())
+        .then(data => fn(data))
+}

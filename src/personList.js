@@ -1,17 +1,21 @@
 import React, {useEffect, useState} from "react";
-import {getItems} from "./controller.js";
-import Item from "./item.js";
+import {getPeople} from "./controller.js";
+import Person from "./person.js";
 import { Col} from 'react-bootstrap';
 
 
-export default function List(){
+export default function PersonList(){
 
     const [list, setList] = useState([]);
     const [list2, setList2] = useState([1,2,3])
 
+    function reload() {
+        getPeople((data) => setList(data))
+    }
+
 
     useEffect(() => {
-        getItems((data) => setList(data))
+        getPeople((data) => setList(data))
     }, []);
 
     return (
@@ -19,7 +23,7 @@ export default function List(){
             {list.map((e) =>
                 <Col>
                 <li>
-                    <Item product={e}></Item>
+                    <Person person={e} reload={reload()}></Person>
                 </li>
                 </Col>
             )}

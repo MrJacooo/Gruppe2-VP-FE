@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import List from "./list.js"
-import Person from "./person.js"
+import Person from "./personList.js"
 import {getItems} from "./controller";
 import { Container, Row, Col, Button, Navbar, Nav } from 'react-bootstrap';
 import './index.css';
