@@ -77,6 +77,7 @@ export default function List() {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button onClick={closeEdit}>Close</Button>
+
                 </Modal.Footer>
             </Modal>}
 
