@@ -7,7 +7,7 @@ import {
 
 import List from "./list.js"
 import { getItems } from "./controller";
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Container, Row, Col, Button, Nav, Navbar } from 'react-bootstrap';
 
 //import Item from "./item"
 
@@ -15,9 +15,16 @@ function App() {
   return (
     <Router>
       <Container>
-        <h1>Einkaufsliste</h1>
-
-
+        <Navbar bg="light" expand="lg">
+          <Navbar.Brand href="/">Einkaufsliste</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mr-auto">
+              <Nav.Link href="">Liste</Nav.Link>
+              <Nav.Link href="#link">Item</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>
 
         <Switch>
           <Route exact path="/">
@@ -41,11 +48,13 @@ export default App;
 
 function Startseite(props) {
 
+
   return (
     <div>
       <h2>Startseite</h2>
       <p>List:</p>
       <List />
     </div>
+
   );
 }
