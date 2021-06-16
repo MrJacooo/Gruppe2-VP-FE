@@ -6,8 +6,10 @@ import {
 } from "react-router-dom";
 
 import List from "./list.js"
+import Person from "./person.js"
 import {getItems} from "./controller";
 import { Container, Row, Col, Button, Navbar, Nav } from 'react-bootstrap';
+import './index.css';
 
 //import Item from "./item"
 
@@ -17,13 +19,9 @@ function App() {
       <Container>
           <Navbar bg="light" expand="lg">
               <Navbar.Brand href="/">Einkaufsliste</Navbar.Brand>
+              <Nav.Link href="#/List" className="navlink">Liste</Nav.Link>
+              <Nav.Link href="#/Person" className="navlink">Person</Nav.Link>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
-              <Navbar.Collapse id="basic-navbar-nav">
-                  <Nav className="mr-auto">
-                      <Nav.Link href="">Liste</Nav.Link>
-                      <Nav.Link href="#link">Item</Nav.Link>
-                  </Nav>
-              </Navbar.Collapse>
           </Navbar>
 
         <Switch>
@@ -38,6 +36,12 @@ function App() {
               </Col>
             </Row>
           </Route>
+            <Route exact path="/List">
+                <Liste></Liste>
+            </Route>
+            <Route exact path="/Person">
+                <Personen></Personen>
+            </Route>
         </Switch>
       </Container>
     </Router>
@@ -46,11 +50,28 @@ function App() {
 
 export default App;
 
-function Startseite(props) {
+function Liste(props) {
 
   return(
       <div>
         <List/>
       </div>
   );
+}
+
+function Startseite(props) {
+
+    return(
+        <div>
+           <p>hallo</p>
+        </div>
+    );
+}
+function Personen(props) {
+
+    return(
+        <div>
+            <Person/>
+        </div>
+    );
 }

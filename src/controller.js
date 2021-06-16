@@ -24,5 +24,6 @@ export function postItem(fn, item) {
 //warum response?
 export function deleteItem(fn, id) {
     fetch("http://localhost:8080/items/" + id, { method: 'delete' })
-        .then(r => r.json()).then(data => fn(data))
+        .then(r => r.json())
+        .then(data => fn(data))
 }
