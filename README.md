@@ -68,3 +68,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### REFLEXION
+
+Wir haben bis jetzt den Grundaufbau des Frontendes abgeschlossen. Die Items und die Liste können angezeigt werden, ebenfalls haben wir die Liste der API Schnittstellen fertiggestellt. Momentan arbeiten wir an den Dringlichkeiten. Was noch fehlt sind die Buttons zum ein Item zu löschen oder hinzuzufügen und die Items müssen noch sortiert werden.
