@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from "react";
-import { getItems } from "./controller.js";
+import { getItems, updateItem } from "./controller.js";
 import Item from "./item.js";
 import { Col, Modal, Button, Form } from 'react-bootstrap';
 
@@ -21,7 +21,9 @@ export default function List() {
     }
 
     function closeEdit() {
+        console.log(currentEdit)
         setModalShow(false)
+        updateItem(data => setList(data), currentEdit)
     }
 
     useEffect(() => {
