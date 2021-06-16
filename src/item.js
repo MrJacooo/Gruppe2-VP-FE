@@ -12,7 +12,8 @@ export default function Item(props) {
                     <p>
                         {props.product.description}
                     </p>
-                    <Button className="float-right" variant="danger" onClick={() => deleteItem(null, props.product.id)}>Delete</Button>
+                    {/*Hässlich gecoded! Die Response von DeleItem wird ignoriert und es wird getItems geladen über props, sorry zukünftiges ich.*/}
+                    <Button className="float-right" variant="danger" onClick={() => deleteItem(() => props.reload(), props.product.id)}>Delete</Button>
                 </Card.Text>
             </Card.Body>
 
