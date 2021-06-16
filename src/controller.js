@@ -27,3 +27,19 @@ export function deleteItem(fn, id) {
         .then(r => r.json())
         .then(data => fn(data))
 }
+
+
+
+
+export function updateItem(fn, obj) {
+    fetch("http://localhost:8080/items/" + obj.id, {
+        method: "put",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify(obj)
+    }).then(() => getItems(fn))
+}
+
