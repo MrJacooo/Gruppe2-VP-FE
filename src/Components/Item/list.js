@@ -15,13 +15,11 @@ export default function List() {
     }
 
     function openEdit(id) {
-
         for (var i = 0; i < list.length; i++) {
             if (list[i].id === id) {
                 setCurrentEdit(list[i])
             }
         }
-
         setModalShow(true)
     }
 
@@ -31,8 +29,11 @@ export default function List() {
         updateItem(data => setList(data), currentEdit)
     }
 
-    function updateCheckbox(id) {
-
+    function updateCheckbox(obj) {
+        console.log(obj)
+        obj = obj.alreadyBought ? { ...obj, alreadyBought: false } : { ...obj, alreadyBought: true }
+        console.log(obj)
+        updateItem(data => setList(data), obj)
     }
 
     useEffect(() => {
