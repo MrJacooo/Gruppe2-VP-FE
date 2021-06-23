@@ -52,4 +52,16 @@ export function updateItem(fn, obj) {
     }).then(() => getItems(fn))
 }
 
+export function addItem(fn, obj) {
+    fetch("http://localhost:8080/items/" + obj.id, {
+        method: "post",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify(obj)
+    }).then(() => getItems(fn))
+}
+
 
