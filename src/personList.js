@@ -23,7 +23,7 @@ export default function PersonList(){
             {list.map((e) =>
                 <Col>
                 <li>
-                    <Person person={e} reload={reload()}></Person>
+                    <Person person={e} reload={reload}></Person>
                 </li>
                 </Col>
             )}
