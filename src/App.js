@@ -5,9 +5,12 @@ import {
   Link
 } from "react-router-dom";
 
+
 import List from "./Components/Item/list"
 import Person from "./Components/Person/personList"
 import { getItems } from "./Components/controller";
+import StartPage from "./Components/startseite.js"
+import AddItem from "./Components/addItem.js"
 import { Container, Row, Col, Button, Navbar, Nav } from 'react-bootstrap';
 import './index.css';
 
@@ -57,7 +60,14 @@ function Liste(props) {
 
   return (
     <div>
-      <p>List:</p>
+        <Row>
+            <Col sm={10}>
+                <p>List: </p>
+            </Col>
+            <Col sm={2}>
+                <AddItem />
+            </Col>
+        </Row>
       <List />
     </div>
 
@@ -66,11 +76,12 @@ function Liste(props) {
 
 function Startseite(props) {
 
-  return (
-    <div>
-      <p>Startseite</p>
-    </div>
-  );
+    return(
+        <div>
+           <StartPage />
+        </div>
+    );
+
 }
 function Personen(props) {
 
