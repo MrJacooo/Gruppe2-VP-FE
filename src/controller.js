@@ -21,6 +21,7 @@ export function postItem(fn, item) {
 }
 */
 
+//warum response?
 export function deleteItem(fn, id) {
     fetch("http://localhost:8080/items/" + id, { method: 'delete' })
         .then(r => r.json())
@@ -38,3 +39,16 @@ export function deletePerson(fn, id) {
         .then(r => r.json())
         .then(data => fn(data))
 }
+
+export function updateItem(fn, obj) {
+    fetch("http://localhost:8080/items/" + obj.id, {
+        method: "put",
+        mode: "cors",
+        headers: {
+            "Content-Type": "application/json",
+            "Access-Control-Allow-Origin": "*",
+        },
+        body: JSON.stringify(obj)
+    }).then(() => getItems(fn))
+}
+

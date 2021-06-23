@@ -11,6 +11,7 @@ import {getItems} from "./controller";
 import { Container, Row, Col, Button, Navbar, Nav } from 'react-bootstrap';
 import './index.css';
 
+
 //import Item from "./item"
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Nav.Link href="#/Person" className="navlink">Person</Nav.Link>
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
           </Navbar>
+
 
         <Switch>
           <Route exact path="/">
@@ -52,10 +54,13 @@ export default App;
 
 function Liste(props) {
 
-  return(
-      <div>
-        <List/>
-      </div>
+
+  return (
+    <div>
+      <p>List:</p>
+      <List />
+    </div>
+
   );
 }
 
@@ -63,7 +68,7 @@ function Startseite(props) {
 
     return(
         <div>
-           <p>hallo</p>
+           <p>Startseite</p>
         </div>
     );
 }
