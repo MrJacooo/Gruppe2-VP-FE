@@ -1,6 +1,6 @@
 import { Card, Button } from "react-bootstrap"
 import { Link } from "react-router-dom"
-import { deleteItem } from "./controller"
+import { deleteItem } from "../controller"
 
 export default function Item(props) {
 

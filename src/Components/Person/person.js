@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap"
-import { deletePerson } from "./controller"
+import { deletePerson } from "../controller"
 import { Col } from 'react-bootstrap';
 import SmallItem from './smallItem';
 
@@ -14,7 +14,7 @@ export default function Person(props) {
                     {props.person.itemList.map((e) =>
                         <SmallItem product={e}></SmallItem>
                     )}
-                    <br/>
+                    <br />
                     <Button className="float-right" variant="danger" onClick={() => deletePerson(() => props.reload(), props.person.id)}>Delete</Button>
                 </Card.Text>
             </Card.Body>

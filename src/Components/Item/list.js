@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { getItems, updateItem } from "./controller.js";
+import { getItems, updateItem } from "../controller.js";
 import Item from "./item.js";
 import { Col, Modal, Button, Form } from 'react-bootstrap';
 

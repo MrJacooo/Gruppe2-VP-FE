@@ -1,5 +1,5 @@
 import { Card, Button } from "react-bootstrap"
-import { deleteItem } from "./controller"
+import { deleteItem } from "../controller"
 
 export default function Item(props) {
 
