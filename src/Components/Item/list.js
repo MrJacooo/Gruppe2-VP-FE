@@ -15,11 +15,9 @@ export default function List() {
     }
 
     function openEdit(id) {
-        for (let i = 0; i < list.length; i++) {
-            if (list[i].id == id) {
-                setCurrentEdit(list[i])
-            }
-        }
+
+        setCurrentEdit(list[id])
+
         setModalShow(true)
     }
 
