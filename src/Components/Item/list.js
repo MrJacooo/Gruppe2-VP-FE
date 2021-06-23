@@ -15,7 +15,11 @@ export default function List() {
     }
 
     function openEdit(id) {
-        setCurrentEdit(list[id])
+        for (let i = 0; i < list.length; i++) {
+            if (list[i].id == id) {
+                setCurrentEdit(list[i])
+            }
+        }
         setModalShow(true)
     }
 
@@ -23,6 +27,10 @@ export default function List() {
         console.log(currentEdit)
         setModalShow(false)
         updateItem(data => setList(data), currentEdit)
+    }
+
+    function updateCheckbox(id) {
+
     }
 
     useEffect(() => {
@@ -36,7 +44,7 @@ export default function List() {
                 <Col>
                     <li>
                         {/*Hässlich gecoded!*/}
-                        <Item product={e} reload={reload} edit={e => openEdit(e)}></Item>
+                        <Item product={e} reload={reload} edit={e => openEdit(e)} updateCheckbox={e => updateCheckbox(e)}></Item>
                     </li>
                 </Col>
             )}
