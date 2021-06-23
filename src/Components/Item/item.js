@@ -1,4 +1,4 @@
-import { Card, Button } from "react-bootstrap"
+import { Card, Button, Form } from "react-bootstrap"
 import { Link } from "react-router-dom"
 import { deleteItem } from "../controller"
 
@@ -14,8 +14,12 @@ export default function Item(props) {
                     {props.product.description}
 
                     {/*Hässlich gecoded! Die Response von DeleItem wird ignoriert und es wird getItems geladen über props, sorry zukünftiges ich.*/}
+                    <Form.Group controlId="formBasicCheckbox">
+                        <Form.Check type="checkbox" label={(props.product.alreadyBought)? "Status: gekauft" : "Status: offen" } checked={props.product.alreadyBought} />
+                    </Form.Group>
                     <Button className="float-right" variant="danger" onClick={() => deleteItem(() => props.reload(), props.product.id)}>Delete</Button>
                     <Button className="float-right mr-3" onClick={() => props.edit(props.product.id)}>Edit</Button>
+
                 </Card.Text>
             </Card.Body>
 
