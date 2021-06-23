@@ -7,6 +7,7 @@ import {
 
 import List from "./list.js"
 import Person from "./person.js"
+import StartPage from "./startseite.js"
 import {getItems} from "./controller";
 import { Container, Row, Col, Button, Navbar, Nav } from 'react-bootstrap';
 import './index.css';
@@ -63,7 +64,7 @@ function Startseite(props) {
 
     return(
         <div>
-           <p>hallo</p>
+           <StartPage />
         </div>
     );
 }
