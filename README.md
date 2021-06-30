@@ -57,7 +57,9 @@ Wir haben die Aufgaben letzer woche besprochen und neue verteilt. Ich habe die a
 
 Gerade habe ich die Task Person Dropdown abgeschlossen und fange jetzt mit der nächsten Task, Sortieren nach Offen / Gekauft.
 
+#### 9:52 Ende Task Sort Offen/Gekauft
 
+Die Task items zu sortieren habe ich ohne komplikationen implementiert.
 
 ## Tobo
 

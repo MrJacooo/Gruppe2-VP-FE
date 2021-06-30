@@ -36,6 +36,14 @@ export default function List() {
         updateItem(data => setList(data), obj)
     }
 
+    function sortAlreadyBought() {
+        var active = []
+        var notactive = []
+        list.forEach(product => product.alreadyBought ? active.push(product) : notactive.push(product))
+        notactive.push(...active)
+        return notactive
+    }
+
     useEffect(() => {
         reload()
         console.log(list)
@@ -43,7 +51,7 @@ export default function List() {
 
     return (
         <ul>
-            {list.map((e) =>
+            {sortAlreadyBought().map((e) =>
                 <Col>
                     <li>
                         {/*Hässlich gecoded!*/}
