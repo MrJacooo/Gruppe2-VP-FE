@@ -1,5 +1,26 @@
 # Readme
 
+
+### Sprint Review
+
+Heute wurde von Tobias am Hinzufügen von Tasks gearbeitet. Das Design dafür ist fertig.
+
+Von Anes wurde am Backend zum Thema Personen gearbeitet und vorallem verbessert.
+
+Von Sebastian wurde im Frontend die Funktionaliltät Acive & NotActive für Items hinzugefügt, ausserdem verschiedene hotfixes, ausserdem hat er die Ordnerstruktur verbessert
+
+Mathoolika hat heute weiter an der Dringlichkeitsfunktion gearbeitet.
+
+
+### Sprint Retrospective
+
+Es gab Probleme damit das Frontend mit dem Backend zum Thema Personen zu verbinden. Anes konnte nicht gut im Frontend arbeiten, Sebastian kam im Backend nicht zurecht.
+
+Ein weiteres Problem war, dass der Letzte Commit von Nicola nicht vorhanden war. Das löste gewisse Probleme aus.
+
+Gewisse Github aktualitätsprobleme enstanden aufgrund von der neuen Ordnerstruktur, Mathoolika musste ihre änderungen unkonventionell aktualisieren.
+
+
 ## Sebastian
 
 ### 9:43 Task Wechsel, Ich wechsle ins frontend

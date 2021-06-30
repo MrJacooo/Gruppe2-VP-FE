@@ -88,7 +88,7 @@ export default function List() {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={closeEdit}>Close</Button>
+                    <Button variant="success" onClick={closeEdit}>Save</Button>
 
                 </Modal.Footer>
             </Modal>}
