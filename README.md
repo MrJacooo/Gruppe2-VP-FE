@@ -1,26 +1,5 @@
 # Readme
 
-
-### Sprint Review
-
-Heute wurde von Tobias am Hinzufügen von Tasks gearbeitet. Das Design dafür ist fertig.
-
-Von Anes wurde am Backend zum Thema Personen gearbeitet und vorallem verbessert.
-
-Von Sebastian wurde im Frontend die Funktionaliltät Acive & NotActive für Items hinzugefügt, ausserdem verschiedene hotfixes, ausserdem hat er die Ordnerstruktur verbessert
-
-Mathoolika hat heute weiter an der Dringlichkeitsfunktion gearbeitet.
-
-
-### Sprint Retrospective
-
-Es gab Probleme damit das Frontend mit dem Backend zum Thema Personen zu verbinden. Anes konnte nicht gut im Frontend arbeiten, Sebastian kam im Backend nicht zurecht.
-
-Ein weiteres Problem war, dass der Letzte Commit von Nicola nicht vorhanden war. Das löste gewisse Probleme aus.
-
-Gewisse Github aktualitätsprobleme enstanden aufgrund von der neuen Ordnerstruktur, Mathoolika musste ihre änderungen unkonventionell aktualisieren.
-
-
 ## Sebastian
 
 ### 23.6
@@ -48,6 +27,27 @@ Heute arbeitete ich wieder im Frontend, mein erstes Task war die Ordnerstruktur 
 Zukunft:
 Wichtig wäre es die Personenliste anzupassen, evl. kümmere ich mich nächstes mal darum.
 
+### Sprint Review
+
+Heute wurde von Tobias am Hinzufügen von Tasks gearbeitet. Das Design dafür ist fertig.
+
+Von Anes wurde am Backend zum Thema Personen gearbeitet und vorallem verbessert.
+
+Von Sebastian wurde im Frontend die Funktionaliltät Acive & NotActive für Items hinzugefügt, ausserdem verschiedene hotfixes, ausserdem hat er die Ordnerstruktur verbessert
+
+Mathoolika hat heute weiter an der Dringlichkeitsfunktion gearbeitet.
+
+
+### Sprint Retrospective
+
+Es gab Probleme damit das Frontend mit dem Backend zum Thema Personen zu verbinden. Anes konnte nicht gut im Frontend arbeiten, Sebastian kam im Backend nicht zurecht.
+
+Ein weiteres Problem war, dass der Letzte Commit von Nicola nicht vorhanden war. Das löste gewisse Probleme aus.
+
+Gewisse Github aktualitätsprobleme enstanden aufgrund von der neuen Ordnerstruktur, Mathoolika musste ihre änderungen unkonventionell aktualisieren.
+
+
+
 ### 30.6
 #### 9:00 Ende Kickoff
 
@@ -60,6 +60,12 @@ Gerade habe ich die Task Person Dropdown abgeschlossen und fange jetzt mit der n
 #### 9:52 Ende Task Sort Offen/Gekauft
 
 Die Task items zu sortieren habe ich ohne komplikationen implementiert.
+
+#### 10:58 Ende hilfe für Mathoolika
+
+Mathoolika hatte hilfe mit ihrem Projekt, wo ich ihr deshalb bis jetzt half. Ausserdem machte ich noch einige kleine hotfixes.
+
+
 
 ## Tobo
 23.06.2021 <br>
@@ -103,7 +109,19 @@ die Mengenangabe wird beim neuen Item nicht angegeben.
 
 
 ## Anes
-Ich und Sebastian tauschten Rollen im Frontend und Backend, da unser Verständnis für das andere jeweils besser ist.
+### 23.06
+Ich und Sebastian tauschten Rollen im Frontend und Backend, da unser Verständnis für das andere jeweils besser ist.  
+Meine Arbeit im Frontend für heute ist getan, denn ich blicke hier nicht ganz durch. Ich bin in dieser Arbeit ein Backend developer
+und bleibe möglichst dort.  
+Was ich aber gemacht habe, ist die Personen Liste. Man kann Personen Löschen, und dessen Items anzeigen. Die werden nach Person gefiltert
+#### Reflexion
+Von mir wurde hier nicht viel Arbeit verrichtet. Ich fing an das Feature zu implementieren, doch es passte nicht mit dem Rest des Projekt-Codes, weshalb ich und Sebastian wieder änderten.  
+Was ich aber erfolgreich implementierte, war die Personen Liste. Man kann jetzt in einem anderen Tab die Items nach Personen filtrieren.
+
+### 30.06
+Ich machte heute ein bisschen von allem im Frontend. Ich half vor allem Mathoolika mit den Dringlichkeits Knöpfen. Dort sind wir aber auf das Problem gestossen, dass ``props.item`` _undefined_ zurück gibt, obwohl es drei Zeilen weiter unten genau gleich geschrieben ist, aber funktioniert. Ich half auch anderen Gruppen, welche noch weiter hinten sind, zum Beispiel der Gruppe von Herrn Ratirajan.
+#### Reflexion
+Ich verstehe mich nicht so gut mit dem Frontend, da ich beim ganzen Aufbau des Frontends nicht dabei war. Dennoch konnte ich Mathoolika mit der Dringlichkeit helfen. Ich brachte es hin, dass die Flammen je nach Dringlichkeit orange aufleuchten.
 
 ## Mathoolika
 ### 16.06.21
