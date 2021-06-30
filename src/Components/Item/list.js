@@ -36,11 +36,20 @@ export default function List() {
         updateItem(data => setList(data), obj)
     }
 
-    function updateUrgency(id) {
-            console.log(id)
-            
-        }
+    function updateUrgency(newDringlichkeit, obj) {
+        console.log(obj)
+        console.log(newDringlichkeit)
+        obj = { ...obj, dringlichkeit: newDringlichkeit+1 }
+        updateItem(data => setList(data), obj) 
+    }
 
+    function sortAlreadyBought() {
+        var active = []
+        var notactive = []
+        list.forEach(product => product.alreadyBought ? active.push(product) : notactive.push(product))
+        notactive.push(...active)
+        return notactive
+    }
 
     useEffect(() => {
         reload()
@@ -49,11 +58,11 @@ export default function List() {
 
     return (
         <ul>
-            {list.map((e) =>
+            {sortAlreadyBought().map((e) =>
                 <Col>
                     <li>
                         {/*Hässlich gecoded!*/}
-                        <Item product={e} reload={reload} edit={e => openEdit(e)} updateCheckbox={e => updateCheckbox(e)} updateUrgency={e => updateUrgency(e)}></Item>
+                        <Item product={e} reload={reload} edit={e => openEdit(e)} updateCheckbox={e => updateCheckbox(e)} updateUrgency={updateUrgency}></Item>
                     </li>
                 </Col>
             )}
@@ -94,7 +103,7 @@ export default function List() {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button onClick={closeEdit}>Close</Button>
+                    <Button variant="success" onClick={closeEdit}>Save</Button>
 
                 </Modal.Footer>
             </Modal>}
