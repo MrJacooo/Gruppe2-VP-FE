@@ -73,3 +73,4 @@ Ich habe das ReactIcons kennengelernt und festgestellt, das Sie unveränderbar s
 ### 23.06.21
 Ich habe das ReactIcon heute als Button formatiert und versucht die Button farbe zu ändern. Ich habe den einzelnen Buttons ihre ID zugewiesen.
 ### 30.06.21
+Heute habe ich mit hilfe von Herr Lanza und Herr Hodza die Urgency Buttons vollendet.
