@@ -5,11 +5,11 @@ import List from "./Item/list.js";
 
 
 export default function AddItem() {
-    const [name, setName] = useState();
-    const [description, setDescription] = useState();
-    const [amount, setAmount] = useState();
-    const [amountType, setAmountType] = useState();
-    const [dringlichkeit, setDringlichkeit] = useState();
+    const [name, setName] = useState("");
+    const [description, setDescription] = useState("");
+    const [amount, setAmount] = useState(0);
+    const [amountType, setAmountType] = useState("");
+    const [dringlichkeit, setDringlichkeit] = useState(0);
     const [list, setList] = useState([]);
 
     const [show, setShow] = useState(false);
