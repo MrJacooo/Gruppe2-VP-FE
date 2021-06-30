@@ -73,3 +73,9 @@ Mathoolika hatte hilfe mit ihrem Projekt, wo ich ihr deshalb bis jetzt half. Aus
 Ich und Sebastian tauschten Rollen im Frontend und Backend, da unser Verständnis für das andere jeweils besser ist.
 
 ## Mathoolika
+### 16.06.21
+Heute habe ich den Aufrag bekommen die Urgency buttons zu machen.
+Ich habe das ReactIcons kennengelernt und festgestellt, das Sie unveränderbar sind. 
+### 23.06.21
+Ich habe das ReactIcon heute als Button formatiert und versucht die Button farbe zu ändern. Ich habe den einzelnen Buttons ihre ID zugewiesen.
+### 30.06.21
