@@ -10,7 +10,7 @@ export default function Item(props) {
         <Card className="mb-2" style={{ backgroundColor: props.product.alreadyBought ? "lightgray" : "white" }}>
             <Card.Body>
                 <Card.Title>{props.product.name} - {props.product.amount} {props.product.amountType}</Card.Title>
-                <Card.Subtitle className="mb-2 text-muted">Zuletzt verändert: {props.product.addedDate}</Card.Subtitle>
+                <Card.Subtitle className="mb-2 text-muted">Zu Kaufen bis: {props.product.addedDate}</Card.Subtitle>
                 <Card.Text>
 
                     {props.product.description}
