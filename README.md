@@ -51,7 +51,11 @@ Wichtig wäre es die Personenliste anzupassen, evl. kümmere ich mich nächstes 
 ### 30.6
 #### 9:00 Ende Kickoff
 
-Wir haben die Aufgaben letzer woche besprochen und neue verteilt. Ich habe die aufgabe bekommen bei den Personen ein Dropdown hinzuzufügen.
+Wir haben die Aufgaben letzer woche besprochen und neue verteilt. Ich habe die aufgabe bekommen bei den Personen ein Dropdown hinzuzufügen und nach offen/gekauft zu sortieren.
+
+#### 9:23 Ende Task Person Dropdown
+
+Gerade habe ich die Task Person Dropdown abgeschlossen und fange jetzt mit der nächsten Task, Sortieren nach Offen / Gekauft.
 
 
 
