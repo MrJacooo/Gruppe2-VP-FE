@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Col, Modal, Button, Form } from 'react-bootstrap';
-import { addItem } from "./controller.js";
+import {addItem, getItems} from "./controller.js";
+import List from "./Item/list.js";
 
 
 export default function AddItem() {
@@ -9,13 +10,18 @@ export default function AddItem() {
     const [amount, setAmount] = useState();
     const [amountType, setAmountType] = useState();
     const [dringlichkeit, setDringlichkeit] = useState();
+    const [list, setList] = useState([]);
 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
 
+    useEffect( () => {
+        getItems((data) => setList(data))
+    })
+
     const handleAdd = () => {
-        addItem(() => {}, {
+        addItem( window.location.reload(false), {
             name: name,
             description: description,
             amount: amount,
@@ -23,6 +29,7 @@ export default function AddItem() {
             dringlichkeit: dringlichkeit
         })
     }
+
 
     return (
         <>
@@ -70,10 +77,10 @@ export default function AddItem() {
                     </Form.Group>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
+                    <Button variant="secondary" onClick={handleClose} >
                         Close
                     </Button>
-                    <Button variant="success" onClick={handleAdd}>
+                    <Button variant="success" onClick={handleAdd} >
                         Add Item
                     </Button>
                 </Modal.Footer>
