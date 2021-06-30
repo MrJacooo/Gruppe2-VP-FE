@@ -86,6 +86,20 @@ nicht zu und das Item wird erst hinzugefügt, wenn die Seite neu geladen wurde.
 Die function reload sollte eigentlich das Problem beheben, jedoch 
 funktioniert es immer noch nicht.
 
+Lösung: Mit der Funktion windows.location.reload(false) konnte das 
+Problem behoben werden
+
+Weiteres wurde der Branch newDesign mit dem develop Branch 
+gemerged. 
+
+Jedoch gibt es noch kleine Fehler und Verbesserungen, die behoben
+werden müssten. Aber nach dem Ausfüllen und Abschicken des AddItemFormular
+geht das Fenster automatisch zu und wird der Liste hinzugefügt, 
+ohne selber die Seite nochmals neu zu laden.
+
+Die neuen Items können aber nicht deactivatet werden und 
+die Mengenangabe wird beim neuen Item nicht angegeben.
+
 
 
 ## Anes
