@@ -68,7 +68,7 @@ Mathoolika hatte hilfe mit ihrem Projekt, wo ich ihr deshalb bis jetzt half. Aus
 
 
 ## Tobo
-23.06.2021 <br>
+30.06.2021 <br>
 1.
 Problem:<br> Auf branch develop wurde eine Änderung gemacht, welche ich auf branch design brauche, jedoch habe ich branch design schon vor 
 der essenziellen Änderung auf dem brach develop gemacht.<br><br>
