@@ -36,6 +36,12 @@ export default function List() {
         updateItem(data => setList(data), obj)
     }
 
+    function updateUrgency(id) {
+            console.log(id)
+            
+        }
+
+
     useEffect(() => {
         reload()
         console.log(list)
@@ -47,7 +53,7 @@ export default function List() {
                 <Col>
                     <li>
                         {/*Hässlich gecoded!*/}
-                        <Item product={e} reload={reload} edit={e => openEdit(e)} updateCheckbox={e => updateCheckbox(e)}></Item>
+                        <Item product={e} reload={reload} edit={e => openEdit(e)} updateCheckbox={e => updateCheckbox(e)} updateUrgency={e => updateUrgency(e)}></Item>
                     </li>
                 </Col>
             )}

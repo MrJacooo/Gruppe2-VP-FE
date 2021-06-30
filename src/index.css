@@ -16,3 +16,17 @@ code {
   color: black;
 }
 
+
+.buttonstyle {
+border: none;
+background-color: white;
+}
+
+.buttonstyleInactive {
+  border: none;
+  background-color: lightgray;
+  }
+
+/* .firebuttons button{
+  background-color: lightsalmon;
+} */
