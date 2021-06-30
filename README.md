@@ -64,6 +64,18 @@ Die Task items zu sortieren habe ich ohne komplikationen implementiert.
 ## Tobo
 
 ## Anes
-Ich und Sebastian tauschten Rollen im Frontend und Backend, da unser Verständnis für das andere jeweils besser ist.
+### 23.06
+Ich und Sebastian tauschten Rollen im Frontend und Backend, da unser Verständnis für das andere jeweils besser ist.  
+Meine Arbeit im Frontend für heute ist getan, denn ich blicke hier nicht ganz durch. Ich bin in dieser Arbeit ein Backend developer
+und bleibe möglichst dort.  
+Was ich aber gemacht habe, ist die Personen Liste. Man kann Personen Löschen, und dessen Items anzeigen. Die werden nach Person gefiltert
+#### Reflexion
+Von mir wurde hier nicht viel Arbeit verrichtet. Ich fing an das Feature zu implementieren, doch es passte nicht mit dem Rest des Projekt-Codes, weshalb ich und Sebastian wieder änderten.  
+Was ich aber erfolgreich implementierte, war die Personen Liste. Man kann jetzt in einem anderen Tab die Items nach Personen filtrieren.
+
+### 30.06
+Ich machte heute ein bisschen von allem im Frontend. Ich half vor allem Mathoolika mit den Dringlichkeits Knöpfen. Dort sind wir aber auf das Problem gestossen, dass ``props.item`` _undefined_ zurück gibt, obwohl es drei Zeilen weiter unten genau gleich geschrieben ist, aber funktioniert. Ich half auch anderen Gruppen, welche noch weiter hinten sind, zum Beispiel der Gruppe von Herrn Ratirajan.
+#### Reflexion
+Ich verstehe mich nicht so gut mit dem Frontend, da ich beim ganzen Aufbau des Frontends nicht dabei war. Dennoch konnte ich Mathoolika mit der Dringlichkeit helfen. Ich brachte es hin, dass die Flammen je nach Dringlichkeit orange aufleuchten.
 
 ## Mathoolika
