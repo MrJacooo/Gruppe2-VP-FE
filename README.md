@@ -9,6 +9,6 @@ It was realized as a schoolproject at the BBW.
 ✔ Add Todo
 ✔ Edit Todo
 ✔ Delete Todo
-X Add Person
+📌 Add Person
 ✔ Edit Person
 ✔ Delete Person
